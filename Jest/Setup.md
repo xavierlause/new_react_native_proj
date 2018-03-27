@@ -20,3 +20,21 @@ npm test
       "node_modules/(?!.*)"
     ]
   }
+  
+- Make a simple test in ./__tests__/App.js:
+  test("adds 1 + 2 to equal 3", () => {
+    expect((1+2)).toBe(3);
+  });
+  
+  
+==============================
+Tools : Enzyme (Airbnb)
+
+http://airbnb.io/projects/enzyme/
+
+- Installation:
+npm i --save-dev enzyme
+
+Check if Exist:
+npm i --save-dev react-addons-test-utils
+npm i --save-dev react-dom

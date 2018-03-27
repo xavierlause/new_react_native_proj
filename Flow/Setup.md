@@ -1,25 +1,26 @@
-Install Flow globaly:
+# Install Flow globally:
 
+```
 sudo npm i flow-bin -g
+```
 
 
-
-After react-native 0.46:
+* After react-native 0.46:
 https://medium.com/react-native-training/getting-started-with-react-native-and-flow-d40f55746809
 
 
-cehck .flowconfig, see the version of flow:
+* cehck .flowconfig, see the version of flow:
 [version]
 ^0.68.0
 
-then run
+* then run
 npm i flow-bin@0.68.0 --save-dev
 
 
-then run the following code and fix the error if exist:
+* then run the following code and fix the error if exist:
 npm run flow
 
-if react-native code / node_module are checked: do the following step:
+* if react-native code / node_module are checked: do the following step:
 1) ignore in .flowconfig => .*/node_modules/.*
 2) create flow-typed folder
 3) create react-native.js in the folder with codes: 
@@ -35,7 +36,7 @@ if react-native code / node_module are checked: do the following step:
  * @flow
  */
  
- Check .babelrc
+* Check .babelrc
  "presets": [["react-native"], ["flow"]]
 
 
